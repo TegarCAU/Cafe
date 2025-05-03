@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TegarUtomo Café</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">TegarUtomo Café</div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservasi</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Selamat Datang di TegarUtomo Café</h1>
+            <p>Tempat di mana aroma kopi dan kenyamanan bersatu</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn primary">Lihat Menu</a>
+                <a href="#reservation" class="btn secondary">Reservasi Meja</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>TegarUtomo Café didirikan dengan visi untuk menyediakan pengalaman kopi terbaik bagi para pecinta kopi. Kami menggunakan biji kopi terbaik dan diseduh dengan penuh cinta.</p>
+                    <p>Kami percaya bahwa setiap cangkir kopi adalah cerita tersendiri, dan kami ingin berbagi cerita itu dengan Anda.</p>
+                </div>
+                <div class="about-gallery">
+                    <div class="about-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Caf%C3%A9_con_leche.jpg/1200px-Caf%C3%A9_con_leche.jpg" alt="Interior Café" class="about-img-1">
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173" alt="Suasana Café" class="about-img-2">
+                    </div>
+                    <!-- Gallery images will be added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Menu Kami</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="kopi">Kopi</button>
+                <button class="category-btn" data-category="non-kopi">Non-Kopi</button>
+                <button class="category-btn" data-category="makanan">Makanan</button>
+            </div>
+            <div class="menu-items">
+                <!-- Menu items will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2>Reservasi Meja</h2>
+            <form id="reservation-form" class="reservation-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Tanggal</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Waktu</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Jumlah Orang</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor HP</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <button type="submit" class="btn primary">Reservasi</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Jl. Tegar Utomo No. 123, Jakarta</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+62 812-1111-1111</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@tegarutomocafe.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Senin - Minggu: 08.00 - 22.00 WIB</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/x.tegarutomo/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Xygar" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/t.xygar/" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="map-container">
+                <div class="map-overlay">
+                    <h3>Lokasi Kami</h3>
+                    <p>Plaza Senayan, Jakarta</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.204364312862!2d106.82718121484376!3d-6.211546295516494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3d19a4b9495%3A0x8e8a76f9a8e67e88!2sPlaza%20Senayan!5e0!3m2!1sid!2sid!4v1683018392537!5m2!1sid!2sid" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TegarUtomo Café. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
